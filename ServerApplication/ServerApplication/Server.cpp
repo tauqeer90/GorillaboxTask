@@ -93,8 +93,10 @@ bool Server::initializeServer() {
 		cout << "Client disconnected." << endl;
 
 	} else {
+		cout << "Failed to connect with client." << endl;
 		return false;
 	}
 
+	cout << "File transfered to client." << endl;
 	return true;
 }
