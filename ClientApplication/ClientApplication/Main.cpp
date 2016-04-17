@@ -1,6 +1,7 @@
 #include <iostream>
 #include <winsock2.h> 
 #include "Client.h"  
+#include <string>
 
 using namespace std;
  
@@ -20,10 +21,14 @@ int main(int argc,char *argv[]) {
 		filePath = argv[2];
 
 	} else {
-		cout<< "Input Arguments less than 3, so hardcoding the arguments." <<endl;
-		ipAaddress = "127.0.0.1";
-		portNumber = 4001;
-		filePath = "E:\\abc.jpg";
+		cout<< "Enter IP address (Server at local host): ";
+		cin >> ipAaddress;
+
+		cout<< "Enter port number (Server Port Num: 4001): ";
+		cin >> (int) portNumber;
+
+		cout<< "Enter file path of the server: ";
+		cin >> filePath;
 	}
 
 	Client client;
