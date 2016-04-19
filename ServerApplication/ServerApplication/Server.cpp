@@ -3,7 +3,7 @@
 #include "Server.h" 
 
 using namespace std;
-#define WRITE_BUFFER_SIZE 3000
+#define WRITE_BUFFER_SIZE 524288
 
 Server::Server() {
 	// port number to be used by the server.

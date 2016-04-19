@@ -4,11 +4,11 @@
 #include <string>
  
 using namespace std;
-#define READ_BUFFER_SIZE 3000
+#define READ_BUFFER_SIZE 524288
 
 bool Client::startClient(string ipAddress, int portNumber, string filePath) {
 	// Path where the file will be downloaded.
-	cout<< "Enter local directory where the file is to be downloaded: ";
+	cout<< "Enter local directory where the file is to be downloaded (Format: drive_name:\\foldername\\ ): ";
 	string download_file_path;
 	cin >> download_file_path;
 	download_file_path += (getFileName(filePath));

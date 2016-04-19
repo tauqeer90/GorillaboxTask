@@ -27,10 +27,10 @@ int main(int argc,char *argv[]) {
 		cout<< "Enter port number (Server Port Num: 4001): ";
 		cin >> (int) portNumber;
 
-		cout<< "Enter file path of the server: ";
+		cout<< "Enter file path of the server (Format: drive_name:\\foldername\\filename ): ";
 		cin >> filePath;
 	}
 
 	Client client;
-	client.startClient("127.0.0.1" , 4001, "E:\\abc.jpg");
+	client.startClient(ipAaddress , portNumber, filePath);
 }
